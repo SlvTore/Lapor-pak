@@ -1,0 +1,93 @@
+.heroes {
+    background-image: linear-gradient(to bottom, #003ECA, #002476);
+    background-size: 100% ;
+    background-position: 0 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    min-height: 325px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.active-card {
+    border: 2px solid #007bff;
+}
+
+.blue-line {
+    border-top: 2px solid #007bff; 
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+.grey-line {
+    border-top: 1px solid #666; 
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+#location-footer {
+  display: flex;
+  align-items: center;
+}
+
+#location-footer i {
+  margin-right: 15px;
+  margin-bottom: 13px;
+}
+
+#phone-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#phone-footer i {
+  margin-right: 10px;
+  margin-bottom: 13px;
+}
+
+#fax-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+#fax-footer i {
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+#social-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-left: 5em;
+}
+
+
+.contact-us {
+    background-image: linear-gradient(to bottom, #003ECA, #002476);
+}

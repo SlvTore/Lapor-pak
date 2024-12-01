@@ -1,0 +1,255 @@
+#register-title {
+    background-color: #082474;
+    border-radius: 0 0 100px 100px;
+}
+
+.card {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card-header-register {
+    background-color: #0142D5;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.process-step {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.process-step i {
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.process-step.active i {
+    background-color: #007bff;
+    color: white;
+}
+
+.process-step:not(.active) i {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.process-line {
+    height: 4px;
+    background-color: #007bff;
+    flex-grow: 1;
+    margin: auto 0;
+}
+
+.grey-line {
+    border-top: 1px solid #666; 
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+
+.tabs .tab-link {
+    color: #777;
+    font-weight: bold;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tabs .tab-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+.tabs .tab-link:hover {
+    color: #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+    border-top: 2px solid #007bff;
+    background-color: #f8f9fa;
+}
+
+.status-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.badge-tindak-lanjut {
+    background-color: #FF5722;
+}
+
+.badge-selesai {
+    background-color: #4CAF50;
+}
+
+.card-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.time-text {
+    color: #888;
+    font-size: 12px;
+}
+
+.card-actions {
+    color: #888;
+    font-size: 14px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.comment-section {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.kartu-container {
+    background-color: #e0e7ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kartu-custom {
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.username {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.impact-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.status-button {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e6f4ea;
+    color: #28a745;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.read-more-button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: #0056b3;
+}
+
+.blue-line {
+    border-top: 2px solid #007bff; 
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+.grey-line {
+    border-top: 1px solid #666; 
+    width: 85%; 
+    margin: 0 auto; 
+}
+
+#location-footer {
+  display: flex;
+  align-items: center;
+}
+
+#location-footer i {
+  margin-right: 15px;
+  margin-bottom: 13px;
+}
+
+#phone-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#phone-footer i {
+  margin-right: 10px;
+  margin-bottom: 13px;
+}
+
+#fax-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+#fax-footer i {
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+#social-footer {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-left: 5em;
+}
