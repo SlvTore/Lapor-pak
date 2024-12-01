@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan</title>
+     <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="./assets/styles/style-report.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container d-flex justify-content-center">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo.png" alt="Bootstrap" width="125px" height="24">
+                  </a>
+                </div>
+            </nav>
+            <section>
+                <div class="container-fluid">
+                    <div id="register-title" class="row">
+                        <div class="col-12">
+                            <h1 class="display-5 fw-bold lh-1 my-3 text-center text-white">Buat Laporan</h1>
+                            <p class="text-white text-center">Laporkan masalah publik seperti infrastruktur rusak atau layanan publik yang kurang memadai. <br>
+                                LaporPak.com siap menampung aspirasi Anda dan meneruskannya kepada pihak yang berwenang!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-header-register">
+                            <h4>Buat Laporan</h4>
+                            <p>Isi laporan anda dengan lengkap agar bisa ditindaklanjuti</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="my-3 fw-bold" for="exampleFormControlInput1" class="form-label">Jenis Laporan</label>
+                        <div class="radio-group justify-content-center">
+                            <label>
+                                <input type="radio" name="klasifikasi_laporan" value="pengaduan">
+                                Pengaduan
+                            </label>
+                            <label>
+                                <input type="radio" name="klasifikasi_laporan" value="aspirasi">
+                                Aspirasi
+                            </label>
+                            <label>
+                                <input type="radio" name="klasifikasi_laporan" value="permintaan_aspirasi">
+                                Permintaan Aspirasi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-3">
+                        <label for="floatingInput" class="fw-bold my-3">Judul Laporan Anda</label>
+                      <input type="Text" class="form-control" id="floatingInput" placeholder="Masukkan Judul">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Laporan</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Deskripsikan Laporan Anda..." title="Message"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Tanggal Kejadian</label>
+                      <input type="Text" class="form-control" id="floatingInput" placeholder="Masukkan Tanggal Kejadian">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Lokasi Kejadian</label>
+                      <input type="Text" class="form-control" id="floatingInput" placeholder="Masukkan Lokasi Kejadian">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Instansi Yang Dituju</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Pilih...</option>
+                            <option value="1">Opsi 1</option>
+                            <option value="2">Opsi 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Kategori Laporan</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Pilih...</option>
+                            <option value="1">Opsi 1</option>
+                            <option value="2">Opsi 2</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 my-2">
+                        <label for="floatingInput" class="fw-bold my-3">Upload Bukti laporan</label>
+                        <input type="file" class="form-control" id="inputGroupFile02" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 justify-content-end text-end">
+                        <label class="my-3 fw-bold" for="exampleFormControlInput1" class="form-label">Pilih Tingkat Privasi yang Anda Inginkan</label>
+                        <div class="radio-group justify-content-end">
+                            <label class="fw-bold">
+                                <input type="radio" name="klasifikasi_laporan" value="publik">
+                                Publik
+                            </label>
+                            <label class="fw-bold">
+                                <input type="radio" name="klasifikasi_laporan" value="anonim">
+                                Anonim
+                            </label>
+                            <label class="fw-bold">
+                                <input type="radio" name="klasifikasi_laporan" value="privasi">
+                                Privasi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6 my-3">
+                        <label class="my-3 fw-bold" for="exampleFormControlInput1" class="form-label">Siap? Kirim Laporan Anda dan Bantu Perbaikan Pelayanan Publik!</label>
+                        <button type="submit" class="btn btn-primary" style="width: 75%;">Kirim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="container mt-5">
+                    <div class="d-flex align-items-center">
+                        
+                        <!-- Step 1 -->
+                        <div class="process-step active">        
+                            <i class="fas fa-edit spinner-grow" style="width: 2em; height: 2em;"></i>
+                            <h6 class="mt-2">Tulis Laporan</h6>
+                            <p class="small">Tulis laporan Anda dengan jelas dan lengkap agar dapat segera diproses.</p>
+                        </div>
+                        
+                        <!-- Line -->
+                        <div class="process-line"></div>
+                        
+                        <!-- Step 2 -->
+                        <div class="process-step">
+                            <i class="fas fa-sync-alt"></i>
+                            <h6 class="mt-2">Proses Verifikasi</h6>
+                            <p class="small">Laporan Anda akan diverifikasi dalam 3 Hari oleh tim kami dan diteruskan ke instansi terkait.</p>
+                        </div>
+                        
+                        <!-- Line -->
+                        <div class="process-line"></div>
+                        
+                        <!-- Step 3 -->
+                        <div class="process-step">
+                            <i class="fas fa-tasks"></i>
+                            <h6 class="mt-2">Tindak Lanjut</h6>
+                            <p class="small">Dalam 5 hari, instansi akan melakukan tindakan terhadap laporan Anda.</p>
+                        </div>
+                        
+                        <!-- Line -->
+                        <div class="process-line"></div>
+                        
+                        <!-- Step 4 -->
+                        <div class="process-step">
+                            <i class="fas fa-reply"></i>
+                            <h6 class="mt-2">Beri Tanggapan</h6>
+                            <p class="small">Anda dapat menanggapi balasan dari instansi yang menangani laporan.</p>
+                        </div>
+                        
+                        <!-- Line -->
+                        <div class="process-line"></div>
+                        
+                        <!-- Step 5 -->
+                        <div class="process-step">
+                            <i class="fas fa-check-circle"></i>
+                            <h6 class="mt-2">Selesai</h6>
+                            <p class="small">Laporan Anda akan terus dipantau hingga selesai ditindaklanjuti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 my-5 text-center">
+                    <button type="button" class="btn btn-outline-primary fw-bold justify-content-center " style="width: 75%;">Pelajari Lebih lanjut</button>
+                </div>
+            </div>
+
+            <div class="row my-2">
+                <div class="col-12">
+                    <div class="grey-line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container mt-5">
+                    <div class="tabs" id="myTab" role="tablist">
+                        <div class="tab-link active" id="all-reports-tab" data-bs-toggle="tab" data-bs-target="#all-reports-tab" role="tab" aria-controls="all-reports" aria-selected="true">Semua Laporan</div>
+                        <div class="tab-link" id="my-reports-tab" data-bs-toggle="tab" data-bs-target="#my-reports-tab" role="tab" aria-controls="my-reports" aria-selected="false">Laporan Saya</div>
+                        <div class="tab-link" id="monitoring-tab" data-bs-toggle="tab" data-bs-target="#monitoring-tab" role="tab" aria-controls="monitoring" aria-selected="false">Pantauan</div>
+                        <div class="tab-link" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popular-tab" role="tab" aria-controls="popular" aria-selected="false">Populer</div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <!-- Frame 31 -->
+            <div class="card mb-3 card-content p-3">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar" class="rounded-circle me-3">
+                    <div>
+                        <span class="username">Anonim</span>
+                        <span class="badge status-badge badge-tindak-lanjut">Tindak Lanjut</span>
+                        <span class="badge status-badge badge-proses-tindakan">Proses Tindakan</span>
+                    </div>
+                    <div class="ms-auto time-text">12 Jam Yang Lalu</div>
+                </div>
+                <div class="mt-2">
+                    <p class="mb-0"><strong>Instansi Tujuan:</strong> "Dinas Perhubungan"</p>
+                    <h5>Permintaan Penerangan di Jalan Utama Desa</h5>
+                    <p>Kami berharap agar pemerintah segera menambah lampu penerangan di jalan utama desa karena sering gelap dan rawan kecelakaan.</p>
+                </div>
+                <div class="d-flex justify-content-between card-actions mt-3">
+                    <div><i class="icon bi bi-chat"></i>Komentar 12</div>
+                    <div><i class="icon bi bi-hand-thumbs-up"></i>Dukungan 12</div>
+                    <div><i class="icon bi bi-share"></i>Bagikan 12</div>
+                </div>
+            </div>
+        
+            <!-- Frame 32 -->
+            <div class="card mb-3 card-content p-3">
+                <div class="d-flex align-items-center">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar" class="rounded-circle me-3">
+                    <div>
+                        <span class="username">Anonim</span>
+                        <span class="badge status-badge badge-selesai">Selesai</span>
+                        <span class="badge status-badge badge-proses-tindakan">Sudah Selesai</span>
+                    </div>
+                    <div class="ms-auto time-text">12 Jam Yang Lalu</div>
+                </div>
+                <div class="mt-2">
+                    <p class="mb-0"><strong>Instansi Tujuan:</strong> "Dinas Perhubungan"</p>
+                    <h5>Permintaan Penerangan di Jalan Utama Desa</h5>
+                    <p>Kami berharap agar pemerintah segera menambah lampu penerangan di jalan utama desa karena sering gelap dan rawan kecelakaan.</p>
+                </div>
+                <div class="d-flex justify-content-between card-actions mt-3">
+                    <div><i class="icon bi bi-chat"></i>Komentar 12</div>
+                    <div><i class="icon bi bi-hand-thumbs-up"></i>Dukungan 12</div>
+                    <div><i class="icon bi bi-share"></i>Bagikan 12</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background-color: #A8C3FF;">
+            <div class="row">
+                <div class="col-12 my-5 text-center">
+                    <h1>Cerita Perubahan</h1>
+            </div>
+
+            <div class="row g-4">
+                <!-- Kartu 1 -->
+                <div class="col-md-4">
+                    <div class="kartu p-3 kartu-custom" style="background-color: white;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2">
+                            <span class="username">Matt Dickerson</span>
+                        </div>
+                        <h5>Solusi Drainase untuk Mengatasi Banjir Musiman</h5>
+                        <p>Setelah laporan warga, pemerintah setempat melakukan perbaikan sistem drainase untuk mencegah banjir di musim hujan.</p>
+                        <p class="impact-text">Dampak: <span class="text-muted">Mengurangi risiko banjir dan menjaga kenyamanan warga selama musim hujan.</span></p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span><i class="bi bi-hand-thumbs-up"></i> Dukungan 12</span>
+                            <button class="status-button">SELESAI ✓</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Kartu 2 -->
+                <div class="col-md-4">
+                    <div class="kartu p-3 kartu-custom" style="background-color: white;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2">
+                            <span class="username">Matt Dickerson</span>
+                        </div>
+                        <h5>Area Gelap di RW 05 Kini Terang</h5>
+                        <p>Pemasangan lampu jalan baru di area gelap RW 05 meningkatkan keamanan warga saat malam hari.</p>
+                        <p class="impact-text">Dampak: <span class="text-muted">Warga merasa lebih aman dan nyaman, serta angka kejahatan di area tersebut berkurang.</span></p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span><i class="bi bi-hand-thumbs-up"></i> Dukungan 12</span>
+                            <button class="status-button">SELESAI ✓</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Kartu 3 -->
+                <div class="col-md-4">
+                    <div class="kartu p-3 kartu-custom" style="background-color: white;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-circle me-2">
+                            <span class="username">Matt Dickerson</span>
+                        </div>
+                        <h5>Perbaikan Jalan Berlubang di Desa Sukamaju</h5>
+                        <p>Jalan utama di Desa Sukamaju yang berlubang akhirnya diperbaiki. Warga kini dapat bepergian dengan aman dan nyaman.</p>
+                        <p class="impact-text">Dampak: <span class="text-muted">Meningkatkan keselamatan pengendara dan memperlancar akses transportasi warga.</span></p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span><i class="bi bi-hand-thumbs-up"></i> Dukungan 12</span>
+                            <button class="status-button">SELESAI ✓</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="text-center my-4">
+                <button class="read-more-button">Baca Selengkapnya</button>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container mt-5">
+            <div class="row my-5">
+                <div class="col-12"> 
+                    <div class="blue-line"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 ml-5">
+                    <img src="./assets/img/logo.png" alt="logo" width="250px" height="50px" style="margin-left: 90px; margin-top: 50px;">
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div id="location-footer" class="col-12">
+                            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                            <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div id="phone-footer" class="col-6">
+                            <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <p>(123) 456-7890</p>
+                        </div>
+                        <div id="fax-footer" class="col-6">
+                            <a href="#"><i class="fa-solid fa-print"></i></a>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>      
+                    <div class="row">
+                        <div id="social-footer" class="col-12 gap-5 my-3">
+                            <p>Social Media</p>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>            
+                </div>
+
+                <div class="row mt-5 mb-2">
+                    <div class="col-12">
+                        <div class="grey-line"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-list">
+                            <ul>
+                                <li><a class="nav-link" href="#">About Us</a></li>
+                                <li><a class="nav-link" href="#">Contact Us</a></li>
+                                <li><a class="nav-link" href="#">Help</a></li>
+                                <li><a class="nav-link" href="#">Privacy Policy</a></li>
+                                <li><a class="nav-link" href="#">Disclaimer</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
